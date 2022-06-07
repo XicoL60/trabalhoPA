@@ -15,7 +15,9 @@ class BDLivrosOpenHelper(
      */
     override fun onCreate(db: SQLiteDatabase?) {
         requireNotNull(db) //if(db == null) return
-        //TODO on create TabelaDeXXXXX(db).cria()
+        TabelaCarros(db).cria()
+        TabelaClientes(db).cria()
+        TabelaServiços(db).cria()
     }
 
     /**
