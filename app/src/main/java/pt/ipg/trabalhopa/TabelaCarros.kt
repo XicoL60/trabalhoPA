@@ -10,8 +10,8 @@ class TabelaCarros(db: SQLiteDatabase):TabelaBD(db, NOME_TABELA)  {
                 "$CAMPO_MODELO TEXT NOT NULL," +
                 "$CAMPO_MATRICULA TEXT NOT NULL," +
                 "$CAMPO_ANO INTEGER NOT NULL," +
-                "FOREIGN KEY ($CAMPO_CLIENTE_ID) REFERENCES ${TabelaClientes.NOME_TABELA}(${BaseColumns._ID}) ON DELETE RESTRICT)")
-                //"$CAMPO_SERVIÇO_ID INTEGER)")
+                "FOREIGN KEY ($CAMPO_CLIENTE_ID) REFERENCES ${TabelaClientes.NOME_TABELA}(${BaseColumns._ID}) ON DELETE RESTRICT,"+
+                "FOREIGN KEY ($CAMPO_SERVIÇO_ID) REFERENCES ${TabelaServiços.NOME_TABELA}(${BaseColumns._ID}) ON DELETE RESTRICT)")
     }
     companion object{
         const val NOME_TABELA = "carros"
