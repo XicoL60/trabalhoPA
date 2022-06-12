@@ -3,7 +3,7 @@ package pt.ipg.trabalhopa
 import android.database.sqlite.SQLiteDatabase
 import android.provider.BaseColumns
 
-class TabelaServiços(db: SQLiteDatabase):TabelaBD(db, NOME_TABELA) {
+class TabelaServices(db: SQLiteDatabase):TabelaBD(db, NOME_TABELA) {
     override fun cria() {
         db.execSQL(
             "CREATE TABLE $NOME_TABELA(${BaseColumns._ID}INTEGER PRIMARY KEY AUTOINCREMENT, " +

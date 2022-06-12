@@ -2,7 +2,7 @@ package pt.ipg.trabalhopa
 
 import android.content.ContentValues
 
-class Serviços(
+class Services(
     var nome : String,
     var data: Long,
     var carroId: Long,
@@ -11,9 +11,9 @@ class Serviços(
     fun toContentValues() : ContentValues {
         val valores = ContentValues()
 
-        valores.put(TabelaServiços.CAMPO_NOME,nome)
-        valores.put(TabelaServiços.CAMPO_DATA,data)
-        valores.put(TabelaServiços.CAMPO_CARRO_ID,carroId)
+        valores.put(TabelaServices.CAMPO_NOME,nome)
+        valores.put(TabelaServices.CAMPO_DATA,data)
+        valores.put(TabelaServices.CAMPO_CARRO_ID,carroId)
 
         return valores
     }

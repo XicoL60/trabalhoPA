@@ -17,7 +17,7 @@ class BDLivrosOpenHelper(
         requireNotNull(db) //if(db == null) return
         TabelaCarros(db).cria()
         TabelaClientes(db).cria()
-        TabelaServiços(db).cria()
+        TabelaServices(db).cria()
     }
 
     /**
