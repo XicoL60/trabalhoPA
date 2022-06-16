@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="pt.ipg.trabalhopa.FirstFragment"
+        android:name="pt.ipg.trabalhopa.FragmentCarros"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_carros">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -17,9 +17,9 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="pt.ipg.trabalhopa.SecondFragment"
+        android:name="pt.ipg.trabalhopa.FragmentClientes"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_clientes">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="pt.ipg.trabalhopa.ThirdFragment"
+        android:name="pt.ipg.trabalhopa.FragmentService"
         android:label="ThirdFragment" >
         <action
             android:id="@+id/action_thirdFragment_to_SecondFragment"

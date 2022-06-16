@@ -12,4 +12,6 @@
     <string name="servi_o">Serviço</string>
     <string name="data">Data</string>
     <string name="id_carro">ID Carro</string>
+    <string name="carros">Carros</string>
+    <string name="clientes">Clientes</string>
 </resources>
