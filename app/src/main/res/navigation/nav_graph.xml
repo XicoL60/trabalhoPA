@@ -3,43 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/CarrosFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/CarrosFragment"
         android:name="pt.ipg.trabalhopa.FragmentCarros"
-        android:label="@string/first_fragment_label"
+        android:label="@string/carros"
         tools:layout="@layout/fragment_carros">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/Clientes" />
         <action
             android:id="@+id/action_FirstFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            app:destination="@id/Serviços" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/Clientes"
         android:name="pt.ipg.trabalhopa.FragmentClientes"
-        android:label="@string/second_fragment_label"
+        android:label="@string/clientes"
         tools:layout="@layout/fragment_clientes">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/CarrosFragment" />
         <action
             android:id="@+id/action_SecondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            app:destination="@id/Serviços" />
     </fragment>
     <fragment
-        android:id="@+id/thirdFragment"
+        android:id="@+id/Serviços"
         android:name="pt.ipg.trabalhopa.FragmentService"
-        android:label="ThirdFragment" >
+        android:label="@string/servi_os">
         <action
             android:id="@+id/action_thirdFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/Clientes" />
         <action
             android:id="@+id/action_thirdFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/CarrosFragment" />
     </fragment>
 </navigation>
