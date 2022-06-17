@@ -32,6 +32,9 @@ class FragmentService: Fragment() {
         binding.buttonVerClientes3.setOnClickListener {
             findNavController().navigate(R.id.action_thirdFragment_to_SecondFragment)
         }
+        binding.buttonVerCarros2.setOnClickListener {
+            findNavController().navigate(R.id.action_thirdFragment_to_FirstFragment)
+        }
     }
 
     override fun onDestroyView() {

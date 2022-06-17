@@ -18,10 +18,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonVerClientes2"
+        android:id="@+id/buttonVerCarros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/clientes"
+        android:text="@string/carros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
