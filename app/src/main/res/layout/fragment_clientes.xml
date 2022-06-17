@@ -7,7 +7,7 @@
     tools:context=".FragmentClientes">
 
     <Button
-        android:id="@+id/buttonVerServiços2"
+        android:id="@+id/buttonVerServicos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/servi_os"
@@ -25,5 +25,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonVerServiços2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonVerServicos2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
